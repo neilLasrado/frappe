@@ -418,7 +418,12 @@ def sign_up(email, full_name):
 			"first_name": full_name,
 			"enabled": 1,
 			"new_password": random_string(10),
-			"user_type": "Website User"
+			"user_type": "System User",
+			"user_roles": [
+				{
+					"role": "Rotary User"
+				}
+			]
 		})
 		user.flags.ignore_permissions = True
 		user.insert()
