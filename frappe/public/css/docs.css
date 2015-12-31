@@ -38,7 +38,7 @@ body {
 .offcanvas .sidebar .divider {
   height: 1px;
   overflow: hidden;
-  background-color: #EBEFF2;
+  background-color: #ebeff2;
   width: 100%;
   margin: 0px;
 }
@@ -52,7 +52,7 @@ body {
 .offcanvas .sidebar .dropdown-menu > li > a:focus,
 .offcanvas .sidebar .sidebar-menu > li > a:active,
 .offcanvas .sidebar .dropdown-menu > li > a:active {
-  background-color: #F0F4F7;
+  background-color: #f0f4f7;
 }
 @media (max-width: 767px) {
   .page-content {
@@ -124,7 +124,7 @@ body {
   }
   .offcanvas .sidebar-label {
     text-transform: uppercase;
-    color: #8D99A6;
+    color: #8d99a6;
     font-size: 85%;
     margin: 0px;
     font-weight: bold;
@@ -177,7 +177,7 @@ body {
   background-color: rgba(255, 255, 255, 0.9);
 }
 .navbar .navbar-search-icon {
-  color: #6C7680;
+  color: #6c7680;
   font-size: inherit;
   position: relative;
   right: 24px;
@@ -196,7 +196,7 @@ body {
 }
 .navbar-center {
   float: left;
-  color: #6C7680;
+  color: #6c7680;
 }
 #navbar-breadcrumbs > li > a:before {
   font-family: FontAwesome;
@@ -213,12 +213,12 @@ body {
   top: 3px;
   content: "\f105";
   margin-right: 10px;
-  color: #C0C9D2;
+  color: #c0c9d2;
 }
 #navbar-breadcrumbs > li > a:hover:before,
 #navbar-breadcrumbs > li > a:focus:before,
 #navbar-breadcrumbs > li > a:active:before {
-  color: #36414C;
+  color: #36414c;
 }
 #navbar-breadcrumbs > li > a {
   padding: 6px 15px 10px 0px;
@@ -262,11 +262,11 @@ img {
   font-size: 48px;
   font-weight: 400;
   opacity: 0.9;
-  color: #2E3338;
+  color: #2e3338;
 }
 .splash .jumbotron p {
   font-size: 24px;
-  font-color: #8D99A6 !important;
+  font-color: #8d99a6 !important;
   letter-spacing: 0px;
   opacity: 0.7;
   margin-bottom: 90px;
@@ -418,7 +418,7 @@ pre {
 }
 .breadcrumb {
   line-height: 1em;
-  color: #8D99A6;
+  color: #8d99a6;
   background-color: transparent;
   margin-bottom: 32px;
   padding: 0px;
@@ -439,7 +439,7 @@ pre {
 .hero-and-content a:hover,
 .hero-and-content a:focus,
 .hero-and-content a:visited {
-  color: #5E64FF;
+  color: #5e64ff;
 }
 .hero-and-content a.btn {
   color: inherit;
@@ -504,7 +504,7 @@ p {
   padding: 5px;
 }
 .docs-footer a {
-  color: #8D99A6;
+  color: #8d99a6;
 }
 .docs-footer li {
   display: inline-block;

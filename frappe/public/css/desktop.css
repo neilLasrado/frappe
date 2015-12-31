@@ -75,11 +75,11 @@ body[data-route="desktop"] .navbar-default {
   letter-spacing: normal;
 }
 .app-icon:hover path {
-  fill: #fff;
+  fill: #ffffff;
 }
 .app-icon:hover i,
 .app-icon:hover {
-  color: #fff;
+  color: #ffffff;
 }
 .app-icon-small {
   padding: 12px;
@@ -168,7 +168,7 @@ body[data-route="desktop"] .navbar-default {
 }
 .desktop-list-item:hover,
 .desktop-list-item:focus {
-  background-color: #F7FAFC;
+  background-color: #f7fafc;
 }
 .desktop-list-item h4 {
   display: inline-block;

@@ -104,7 +104,7 @@ login.login_handlers = (function() {
 	var login_handlers = {
 		200: function(data) {
 			if(data.message=="Logged In") {
-				window.location.href = get_url_arg("redirect-to") || data.home_page;
+				window.location.href = get_url_arg("redirect-to") || "/desk#List/Directory";
 			} else if(data.message=="No App") {
 				if(localStorage) {
 					var last_visited =

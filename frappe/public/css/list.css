@@ -20,7 +20,7 @@
 .set-filters .btn-group .btn-default {
   background-color: transparent;
   border: 1px solid #d1d8dd;
-  color: #8D99A6;
+  color: #8d99a6;
 }
 .filter-box {
   border-top: 1px solid #d1d8dd;
@@ -61,18 +61,18 @@
   margin-bottom: 0px;
 }
 .list-row-head {
-  background-color: #F7FAFC;
+  background-color: #f7fafc;
   border-bottom: 1px solid #d1d8dd !important;
 }
 .list-row:hover,
 .grid-row:hover {
-  background: #F7FAFC;
+  background: #f7fafc;
 }
 .list-row:last-child {
   border-bottom: 0px;
 }
 .list-row-head {
-  background-color: #F7FAFC;
+  background-color: #f7fafc;
   border-bottom: 1px solid #d1d8dd !important;
 }
 .list-row .h6 {

@@ -294,4 +294,4 @@ def redirect_post_login(desk_user):
 	frappe.local.response["type"] = "redirect"
 
 	# the #desktop is added to prevent a facebook redirect bug
-	frappe.local.response["location"] = "/desk#desktop" if desk_user else "/"
+	frappe.local.response["location"] = "/desk#List/Directory" if desk_user else "/"

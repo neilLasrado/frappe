@@ -38,7 +38,7 @@ body {
 .offcanvas .sidebar .divider {
   height: 1px;
   overflow: hidden;
-  background-color: #EBEFF2;
+  background-color: #ebeff2;
   width: 100%;
   margin: 0px;
 }
@@ -52,7 +52,7 @@ body {
 .offcanvas .sidebar .dropdown-menu > li > a:focus,
 .offcanvas .sidebar .sidebar-menu > li > a:active,
 .offcanvas .sidebar .dropdown-menu > li > a:active {
-  background-color: #F0F4F7;
+  background-color: #f0f4f7;
 }
 .hide-form-sidebar .form-sidebar {
   display: none !important;
@@ -108,7 +108,7 @@ body[data-route^="Module"] .main-menu .form-sidebar {
 .sidebar-menu h6,
 .sidebar-menu .h6 {
   text-transform: uppercase;
-  color: #8D99A6;
+  color: #8d99a6;
   font-size: 10px;
   margin-top: 0px;
 }
@@ -122,7 +122,7 @@ body[data-route^="Module"] .main-menu .form-sidebar {
 }
 .form-sidebar .form-tags input {
   font-size: 12px !important;
-  color: #36414C !important;
+  color: #36414c !important;
   font-style: italic;
 }
 .form-sidebar .form-tags .tagit-new {
@@ -154,12 +154,12 @@ body[data-route^="Module"] .main-menu .form-sidebar {
 .form-sidebar .form-shared .shared-with-everyone,
 .form-sidebar .form-viewers .shared-with-everyone {
   border-style: solid;
-  border-color: #F0F4F7;
-  background-color: #F0F4F7;
+  border-color: #f0f4f7;
+  background-color: #f0f4f7;
 }
 .form-sidebar .form-shared .shared-with-everyone .octicon,
 .form-sidebar .form-viewers .shared-with-everyone .octicon {
-  color: #36414C !important;
+  color: #36414c !important;
 }
 .form-sidebar .liked-by .octicon-heart {
   font-size: 16px;
@@ -168,12 +168,12 @@ body[data-route^="Module"] .main-menu .form-sidebar {
 .form-sidebar .form-shared .share-doc-btn:hover,
 .form-sidebar .form-shared .share-doc-btn:focus,
 .form-sidebar .form-shared .share-doc-btn:active {
-  background-color: #F0F4F7;
+  background-color: #f0f4f7;
 }
 .form-sidebar .form-shared .share-doc-btn:hover .octicon-plus,
 .form-sidebar .form-shared .share-doc-btn:focus .octicon-plus,
 .form-sidebar .form-shared .share-doc-btn:active .octicon-plus {
-  color: #36414C !important;
+  color: #36414c !important;
 }
 .sidebar-left .form-sidebar .form-tags,
 .sidebar-left .form-sidebar .assignment-row,
