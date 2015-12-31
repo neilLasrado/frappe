@@ -390,7 +390,7 @@ def update_password(new_password, key=None, old_password=None):
 	frappe.local.login_manager.login_as(user)
 
 	if frappe.db.get_value("User", user, "user_type")=="System User":
-		return "/desk"
+		return "/desk#List/Directory"
 	else:
 		return "/"
 
