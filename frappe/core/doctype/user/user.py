@@ -355,6 +355,14 @@ def get_languages():
 	}
 
 @frappe.whitelist()
+def get_user_path():
+	redirect_url = "/desk#Form/Directory/New%20Directory%201"
+	form = frappe.db.sql("select name, owner from `tabDirectory` where owner=%s", frappe.get_user().name)
+	if form:
+		redirect_url = "/desk#Form/Directory/" + form[0][0]
+	return redirect_url
+	
+@frappe.whitelist()
 def get_all_roles(arg=None):
 	"""return all roles"""
 	return [r[0] for r in frappe.db.sql("""select name from tabRole
@@ -389,11 +397,13 @@ def update_password(new_password, key=None, old_password=None):
 
 	frappe.local.login_manager.login_as(user)
 
-	if frappe.db.get_value("User", user, "user_type")=="System User":
-		return "/desk#List/Directory"
-	else:
-		return "/"
-
+	redirect_url = "/desk#Form/Directory/New%20Directory%201"
+	form = frappe.db.sql("select name, owner from `tabDirectory` where owner=%s", frappe.get_user().name)
+	if form:
+		redirect_url = "/desk#Form/Directory/" + form[0][0]
+		
+	return redirect_url
+	
 @frappe.whitelist()
 def verify_password(password):
 	frappe.local.login_manager.check_password(frappe.session.user, password)

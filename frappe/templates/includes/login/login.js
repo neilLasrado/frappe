@@ -104,7 +104,12 @@ login.login_handlers = (function() {
 	var login_handlers = {
 		200: function(data) {
 			if(data.message=="Logged In") {
-				window.location.href = get_url_arg("redirect-to") || "/desk#List/Directory";
+				frappe.call({
+					method: "frappe.core.doctype.user.user.get_user_path",
+					callback: function(r) {
+						window.location.href = get_url_arg("redirect-to") || r.message;
+					}
+				});
 			} else if(data.message=="No App") {
 				if(localStorage) {
 					var last_visited =

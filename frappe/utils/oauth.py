@@ -299,4 +299,9 @@ def redirect_post_login(desk_user):
 	frappe.local.response["type"] = "redirect"
 
 	# the #desktop is added to prevent a facebook redirect bug
-	frappe.local.response["location"] = "/desk#List/Directory" if desk_user else "/"
+	redirect_url = "desk#Form/Directory/New%20Directory%201"
+	form = frappe.db.sql("select name, owner from `tabDirectory` where owner=%s", frappe.get_user().name)
+	if form:
+		redirect_url = "desk#Form/Directory/" + form[0][0]
+
+	frappe.local.response["location"] = redirect_url

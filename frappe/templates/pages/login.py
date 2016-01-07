@@ -13,7 +13,12 @@ no_cache = True
 
 def get_context(context):
 	if frappe.session.user != "Guest" and frappe.session.data.user_type=="System User":
-		frappe.local.flags.redirect_location = "/desk#List/Directory"
+		redirect_url = "/desk#Form/Directory/New%20Directory%201"
+		form = frappe.db.sql("select name, owner from `tabDirectory` where owner=%s", frappe.get_user().name)
+		if form:
+			redirect_url = "/desk#Form/Directory/" + form[0][0]
+		
+		frappe.local.flags.redirect_location = redirect_url
 		raise frappe.Redirect
 
 	# get settings from site config
