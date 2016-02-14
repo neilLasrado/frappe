@@ -100,7 +100,7 @@ class Communication(Document):
 				self.sender_full_name = self.sender
 				self.sender = frappe.db.get_value("User", "Administrator", "email")
 			else:
-				validate_email_add(self.sender, throw=True)
+			#	validate_email_add(self.sender, throw=True)
 				self.sender_full_name = get_fullname(self.sender)
 
 	def get_parent_doc(self):
